@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">32sp</dimen>
+    <dimen name="titleMarginTop">20sp</dimen>
+    <dimen name="labelTextSize">17sp</dimen>
+    <dimen name="labelMarginTop">12sp</dimen>
+    <dimen name="labelPadding">10sp</dimen>
+    <dimen name="inputMarginTop">10sp</dimen>
+    <dimen name="inputPadding">15sp</dimen>
+    <dimen name="buttonBottom">40sp</dimen>
+    <dimen name="margin15sp">15sp</dimen>
+</resources>

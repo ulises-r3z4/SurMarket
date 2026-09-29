@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SurMarket</string>
+    <string name="LoginTitle">Iniciar Sesión</string>
+    <string name="LoginUserName">Nombre de Usuario:</string>
+    <string name="LoginUserNameETX">Ingresa tu Nombre de Usuario</string>
+    <string name="LoginPassword">Contraseña:</string>
+    <string name="LoginPasswordETX">Ingresa tu contraseña</string>
+    <string name="RecoveryPassword">Recuperar contraseña</string>
+    <string name="buttonLoginText">Iniciar Sesión</string>
+    <string name="buttonRegisterText">Registrarse Aquí</string>
+</resources>
