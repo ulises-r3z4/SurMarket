@@ -1,11 +1,20 @@
 <resources>
     <string name="app_name">SurMarket</string>
-    <string name="LoginTitle">Iniciar Sesión</string>
-    <string name="LoginUserName">Nombre de Usuario:</string>
-    <string name="LoginUserNameETX">Ingresa tu Nombre de Usuario</string>
+    <string name="FRGLogin_Title">Iniciar Sesión</string>
+    <string name="FRGLogin_TXVUserName">Nombre de Usuario:</string>
+    <string name="FRGLogin_ETXUserName">Ingresa tu Nombre de Usuario</string>
     <string name="LoginPassword">Contraseña:</string>
     <string name="LoginPasswordETX">Ingresa tu contraseña</string>
     <string name="RecoveryPassword">Recuperar contraseña</string>
     <string name="buttonLoginText">Iniciar Sesión</string>
     <string name="buttonRegisterText">Registrarse Aquí</string>
+    <string name="FRGLogin_TXVPassword">Contraseña:</string>
+    <string name="FRGLogin_ETXPassword">Ingresa tu Contraseña</string>
+    <string name="FRGLogin_RecoverPassword">Recuperar Contraseña</string>
+    <string name="FRGLogin_BTNLogin">INICIAR SESION</string>
+    <string name="loginWelcome">Bienvenido a SurMarket</string>
+    <string name="loginError">Usuario o contraseña inválidos</string>
+    <string name="userEmpty">Ingrese su nombre de Usuario</string>
+    <string name="passwordEmpty">Ingrese su contraseña</string>
+
 </resources>

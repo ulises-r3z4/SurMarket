@@ -9,4 +9,10 @@
     <dimen name="inputPadding">15sp</dimen>
     <dimen name="buttonBottom">40sp</dimen>
     <dimen name="margin15sp">15sp</dimen>
+    <dimen name="FRGTitleTextSize">24sp</dimen>
+
+    <dimen name="FRGLabelTextSize">16sp</dimen>
+    <dimen name="FRGEditTextTextSize">16sp</dimen>
+    <dimen name="FRGContainerPadding">24dp</dimen>
+    <dimen name="FRGTextView2TextSize">14sp</dimen>
 </resources>
