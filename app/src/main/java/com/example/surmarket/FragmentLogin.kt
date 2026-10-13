@@ -9,7 +9,6 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import kotlin.math.atan
 
 class FragmentLogin: Fragment() {
     private lateinit var ETX_FRGLogin_UserName: EditText
@@ -23,7 +22,7 @@ class FragmentLogin: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragmet_login,container, true)
+        return inflater.inflate(R.layout.fragment_login,container, true)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -61,18 +60,25 @@ class FragmentLogin: Fragment() {
             return
         }
         if(verifyCredentials(user,password)){
-            Toast.makeText(requireContext(),getString(R.string.loginWelcome),Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),
+                getString(R.string.loginWelcome),
+                Toast.LENGTH_SHORT).show()
         }
         else
         {
-            Toast.makeText(requireContext(),getString(R.string.loginError),Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),getString(R.string.loginError),
+                Toast.LENGTH_SHORT).show()
         }
+
     }
 
     private fun verifyIntegrity(user: String, password: String): Boolean {
         var res = true
         if(user.isNotEmpty()){
             ETX_FRGLogin_UserName.error=getString(R.string.userEmpty)
+            res=false
         }
         else
         {
@@ -81,6 +87,7 @@ class FragmentLogin: Fragment() {
 
         if(user.isNotEmpty()){
             ETX_FRGLogin_Password.error=getString(R.string.passwordEmpty)
+            res=false
         }
         else
         {
