@@ -17,4 +17,12 @@
             app:destination="@+id/productsListFragment"
             />
     </fragment>
+    <fragment
+        android:id="@+id/productsListFragment"
+        android:name="com.example.surmarket.FragmentProductsList"
+        android:label="@string/labelProductsListFragment"
+        tools:layout="@layout/fragment_products_list"
+        >
+
+    </fragment>
 </navigation>
