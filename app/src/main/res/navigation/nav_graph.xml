@@ -23,6 +23,17 @@
         android:label="@string/labelProductsListFragment"
         tools:layout="@layout/fragment_products_list"
         >
+        <action
+            android:id="@+id/action_product_list_to_add_product"
+            app:destination="@+id/addProductFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.example.surmarket.FragmentAddProduct"
+        android:label="@string/labelAddProductsFragment"
+        tools:layout="@layout/fragment_products_list"
+        >
 
     </fragment>
 </navigation>

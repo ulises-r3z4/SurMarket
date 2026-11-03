@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.surmarket.models.product
@@ -50,7 +51,10 @@ class FragmentProductsList : Fragment() {
         RCV_FRGProductsList_ProductsList=view.findViewById(R.id.RCV_FRGProductsList_ProductsList)
     }
     private fun configureListeners() {
-
+        BTN_FRGProductsList_AddProduct.setOnClickListener {
+            Toast.makeText(requireContext(),getString(R.string.addProduct), Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_product_list_to_add_product)
+        }
     }
 
     private fun configureRecyclerView(){

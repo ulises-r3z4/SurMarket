@@ -60,7 +60,8 @@ class FragmentLogin: Fragment() {
         if(!verifyIntegrity(user,password)){
             return
         }
-        if(verifyCredentials(user,password)){
+        if(verifyCredentials(user,password))
+        {
             Toast.makeText(
                 requireContext(),
                 getString(R.string.loginWelcome),

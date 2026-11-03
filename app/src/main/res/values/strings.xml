@@ -27,5 +27,26 @@
     <string name="category">Categoría</string>
     <string name="price">Precio</string>
     <string name="addCart">Adicionado al carrito</string>
-
+    <string name="product_image">Imagen del Producto</string>
+    <string name="FRGAddProduct_BTNAddImage">Añadir Imagen</string>
+    <string name="FRGAddProduct_TXVProductName">Nombre del Producto:</string>
+    <string name="FRGAddProduct_ETXProductName">Nombre</string>
+    <string name="FRGAddProduct_ETXProductPrice">Precio</string>
+    <string name="FRGAddProduct_TXVProductPrice">Precio:</string>
+    <string name="FRGAddProduct_TXVProductStock">Cantidad:</string>
+    <string name="FRGAddProduct_ETXProductStock">Cantidad</string>
+    <string name="FRGAddProduct_TXVProductDescription">Descripción del Producto:</string>
+    <string name="FRGAddProduct_ETXProductDescription">Descripción</string>
+    <string name="category_men">Ropa de Varón</string>
+    <string name="category_women">Ropa de Mujer</string>
+    <string name="category_children">Ropa de Niños</string>
+    <string name="category_baby">Ropa de Bebés</string>
+    <string name="category_shoes">Calzados</string>
+    <string name="category_accesories">Accesorios</string>
+    <string name="category_others">Otros/Varios</string>
+    <string name="availability_available">Disponible</string>
+    <string name="availability_not_available">No Disponible</string>
+    <string name="FRGAddProduct_BTNAddProduct">Añadir</string>
+    <string name="labelAddProductsFragment">Añadir Producto</string>
+    <string name="addProduct">Añadir Nuevo Producto</string>
 </resources>

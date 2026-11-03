@@ -97,8 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_button_rounded"
-            android:layout_marginStart="@dimen/margin15sp"
-            android:layout_marginEnd="@dimen/margin15sp"
+
             android:padding="@dimen/margin15sp"
             android:textStyle="bold"
             android:text="@string/FRGLogin_BTNLogin"
@@ -109,8 +108,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bg_button_rounded"
             android:layout_marginTop="@dimen/inputMarginTop"
-            android:layout_marginStart="@dimen/margin15sp"
-            android:layout_marginEnd="@dimen/margin15sp"
+
             app:backgroundTint="@color/buttonColorGray"
             android:text="@string/buttonRegisterText"
             android:textColor="@color/purple_700"

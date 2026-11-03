@@ -14,7 +14,7 @@
         android:elevation="2dp"
         android:gravity="center_vertical"
         android:paddingHorizontal="16dp"
-        android:layout_marginTop="@dimen/FRGMarginTop"
+
         >
         <TextView
             android:id="@+id/TXV_FRGProductsList_Title"
@@ -58,6 +58,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
                 android:paddingHorizontal="16dp"
+                android:background="@drawable/bg_input_rounded"
                 >
                 <ImageView
                     android:id="@+id/IMV_FRGProductsList_Search"
@@ -94,6 +95,7 @@
         android:layout_marginHorizontal="16sp"
         android:textStyle="bold"
         android:text="@string/FRGProductList_BTNAddProduct"
+
         />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -102,5 +104,6 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         tools:listitem="@layout/item_productslist"
+        android:padding="16dp"
         />
 </LinearLayout>
