@@ -15,8 +15,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="@dimen/fragment_padding"
-
-
             >
             <androidx.cardview.widget.CardView
                 android:id="@+id/CRV_FRGAddProduct_Image"

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".FragmentProfile"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/fragment_profile_padding"
+        android:gravity="center_horizontal"
+        >
+        <androidx.cardview.widget.CardView
+        android:id="@+id/CRV_FRGProfile_Image"
+        android:layout_width="@dimen/cardview_image_height_profile"
+        android:layout_height="@dimen/cardview_image_height_profile"
+        android:layout_marginBottom="@dimen/cardview_default_margin_bottom"
+            app:cardCornerRadius="100dp"
+        >
+            <ImageView
+                android:id="@+id/IMG_FRGProfile_Image"
+                android:layout_width="@dimen/cardview_image_height_profile"
+                android:layout_height="@dimen/cardview_image_height_profile"
+                android:contentDescription="@string/product_image"
+                android:src="@drawable/ic_usuario"
+
+            />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/TXV_FRGProfile_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/FRGProfile_TXVUserName"
+            android:textSize="@dimen/FRGLabelTextSizeProfileUser"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/TXV_FRGProfile_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/FRGProfile_TXVID"
+            android:textSize="@dimen/FRGLabelTextSizeProfileID"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/titleMarginTop"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardview_image_profile"
+                android:layout_height="@dimen/cardview_image_profile"
+                app:cardCornerRadius="@dimen/cardview_item_corner_radius"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/buttonColorGray"
+
+                >
+
+                <ImageView
+                    android:id="@+id/IMV_FRGProfile_Email"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/product"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_email" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:layout_marginStart="@dimen/item_marginStart"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_EmailName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="usuario123@gmail.com"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/titleMarginTop"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardview_image_profile"
+                android:layout_height="@dimen/cardview_image_profile"
+                app:cardCornerRadius="@dimen/cardview_item_corner_radius"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/buttonColorGray"
+
+                >
+                <ImageView
+                    android:id="@+id/IMV_FRGProfile_Name"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/product"
+                    android:src="@drawable/ic_nombrecompleto"
+                    android:layout_gravity="center"
+                    />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:layout_marginStart="@dimen/item_marginStart"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre completo"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_EmailName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Juan Pablo"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/titleMarginTop"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardview_image_profile"
+                android:layout_height="@dimen/cardview_image_profile"
+                app:cardCornerRadius="@dimen/cardview_item_corner_radius"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/buttonColorGray"
+
+                >
+                <ImageView
+                    android:id="@+id/IMV_FRGProfile_Phone"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/product"
+                    android:src="@drawable/ic_telefono"
+                    android:layout_gravity="center"
+                    />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:layout_marginStart="@dimen/item_marginStart"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_Phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_PhoneNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+591 63797059"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/titleMarginTop"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardview_image_profile"
+                android:layout_height="@dimen/cardview_image_profile"
+                app:cardCornerRadius="@dimen/cardview_item_corner_radius"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/buttonColorGray"
+
+                >
+                <ImageView
+                    android:id="@+id/IMV_FRGProfile_Address"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/product"
+                    android:src="@drawable/ic_direccion"
+                    android:layout_gravity="center"
+                    />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:layout_marginStart="@dimen/item_marginStart"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dirección"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_AddressName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calle Principal 123, Ciudad, Estado"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/titleMarginTop"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardview_image_profile"
+                android:layout_height="@dimen/cardview_image_profile"
+                app:cardCornerRadius="@dimen/cardview_item_corner_radius"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/buttonColorGray"
+
+                >
+                <ImageView
+                    android:id="@+id/IMV_FRGProfile_DateIn"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/product"
+                    android:src="@drawable/ic_fechaingreso"
+                    android:layout_gravity="center"
+                    />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:layout_marginStart="@dimen/item_marginStart"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_DateIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha Ingreso"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_DateInName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 de marzo de 2023"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/titleMarginTop"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardview_image_profile"
+                android:layout_height="@dimen/cardview_image_profile"
+                app:cardCornerRadius="@dimen/cardview_item_corner_radius"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/buttonColorGray"
+
+                >
+                <ImageView
+                    android:id="@+id/IMV_FRGProfile_LastAccess"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/product"
+                    android:src="@drawable/ic_ultimoacceso"
+                    android:layout_gravity="center"
+                    />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:layout_marginStart="@dimen/item_marginStart"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_LastAccess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Último Acceso"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_LastAccessName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 de mayo de 2024, 10:30 AM"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/titleMarginTop"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardview_image_profile"
+                android:layout_height="@dimen/cardview_image_profile"
+                app:cardCornerRadius="@dimen/cardview_item_corner_radius"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/buttonColorGray"
+
+                >
+                <ImageView
+                    android:id="@+id/IMV_FRGProfile_Groups"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/product"
+                    android:src="@drawable/ic_grupos"
+                    android:layout_gravity="center"
+                    />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:layout_marginStart="@dimen/item_marginStart"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_Groups"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grupos"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_GroupsName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Administradores, Usuarios"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/titleMarginTop"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/cardview_image_profile"
+                android:layout_height="@dimen/cardview_image_profile"
+                app:cardCornerRadius="@dimen/cardview_item_corner_radius"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/buttonColorGray"
+
+                >
+                <ImageView
+                    android:id="@+id/IMV_FRGProfile_Permissions"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/product"
+                    android:src="@drawable/ic_permisos"
+                    android:layout_gravity="center"
+                    />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:layout_marginStart="@dimen/item_marginStart"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_Permissions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Permisos"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+
+                    />
+                <TextView
+                    android:id="@+id/TXV_FRGProfile_PermissionsName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leer, Escribir, Eliminar"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/BTN_Profile_ChangePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Profile_BTNChangePassword"
+                android:textSize="@dimen/ITTextView_TextSize"
+                android:paddingHorizontal="@dimen/button_padding_horizontal"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:backgroundTint="@color/buttonColorGray"
+                android:layout_gravity="end"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

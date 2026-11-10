@@ -49,4 +49,7 @@
     <string name="FRGAddProduct_BTNAddProduct">Añadir</string>
     <string name="labelAddProductsFragment">Añadir Producto</string>
     <string name="addProduct">Añadir Nuevo Producto</string>
+    <string name="FRGProfile_TXVUserName">Usuario123</string>
+    <string name="FRGProfile_TXVID">ID: 4567789</string>
+    <string name="Profile_BTNChangePassword">Cambiar Contraseña</string>
 </resources>
